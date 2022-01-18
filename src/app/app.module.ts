@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AddPostModule } from './add-post';
 import { AppComponent } from './app.component';
 import { FirstTopicComponent } from './first-topic/first-topic.component';
-import { AddPostPanelComponent } from './add-post-panel/add-post-panel.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstTopicComponent,
-    AddPostPanelComponent
+
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AddPostModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
